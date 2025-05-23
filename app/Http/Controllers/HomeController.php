@@ -132,7 +132,7 @@ class HomeController extends Controller
         $contact = [
             'wechat' => 'o140445',
             'email' => 'o140445s@gmail.com',
-            'github' => 'github.com/yourusername'
+            'telegram' => 't.me/o140445',
         ];
 
         //项目展示  3个

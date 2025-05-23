@@ -147,7 +147,7 @@
 <section id="contact" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center text-cyan-900 mb-12">联系方式</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <!-- 微信 -->
             <div class="bg-cyan-50 p-8 rounded-lg text-center" onclick="showWechatQR()">
                 <div class="text-cyan-600 mb-4">
@@ -156,7 +156,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-cyan-900 mb-2">微信</h3>
-                <button  class="text-cyan-600 hover:text-cyan-700">
+                <button class="text-cyan-600 hover:text-cyan-700">
                     {{ $contact['wechat'] }}
                 </button>
             </div>
@@ -164,7 +164,6 @@
             <!-- 邮箱 -->
             <div class="bg-cyan-50 p-8 rounded-lg text-center">
                 <a href="mailto:{{ $contact['email'] }}">
-
                     <div class="text-cyan-600 mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -173,6 +172,21 @@
                     <h3 class="text-xl font-semibold text-cyan-900 mb-2">邮箱</h3>
                     <div class="text-cyan-600 hover:text-cyan-700">
                         {{ $contact['email'] }}
+                    </div>
+                </a>
+            </div>
+
+            <!-- Telegram -->
+            <div class="bg-cyan-50 p-8 rounded-lg text-center">
+                <a href="https://{{ $contact['telegram'] }}" target="_blank">
+                    <div class="text-cyan-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cyan-900 mb-2">Telegram</h3>
+                    <div class="text-cyan-600 hover:text-cyan-700">
+                        {{ $contact['telegram'] }}
                     </div>
                 </a>
             </div>
